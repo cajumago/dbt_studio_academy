@@ -1,0 +1,8 @@
+# raw = "dbt_studio_academy". Named my Catalog as "dbt_studio_academy" in Databricks.
+
+sources:
+  - name: stripe
+    database: dbt_studio_academy  
+    schema: stripe  
+    tables:
+      - name: payments
