@@ -1,0 +1,21 @@
+models:
+  - name: stg_stripe__payments
+    description: The grain of this table is one unique payment per row.
+    columns:
+      - name: payment_id
+        description: Primary key for the payment table
+        data_tests:
+          - unique
+          - not_null
+      - name: order_id
+        data_tests:
+          - not_null
+      - name: payment_method
+        data_tests:
+          - not_null
+      - name: status
+        data_tests:
+          - not_null
+      - name: amount
+        data_tests:
+          - not_null
